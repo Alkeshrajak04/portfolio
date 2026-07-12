@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<!-- Royal Tutorials -->
+<!-- Alkesh Rajak -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>portfolio</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome offline -->
-    <link rel="stylesheet" href="css/all.css">
+   
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+          
 </head>
 <body>
+   <!-- Navbar -->
+    </nav> -->
     <nav class="navbar">
-        <a href="#" class="logo">Port<span>folio.</span></a>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="home">
+    <a href="#" class="logo">Port<span>folio.</span></a>
+
+    <i class="fa-solid fa-bars menu-icon" id="menuIcon"></i>
+
+    <ul id="navLinks">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Experience</a></li>
+         <li><a href="#">Projects</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<section class="home">
         <div class="home-info">
             <h1>Alkesh Rajak</h1>
             <h2>I'm a Full Stack Developer</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam voluptates, tempora, ratione libero saepe voluptatibus et, necessitatibus nisi temporibus optio. Velit, enim tempora. Est voluptate eveniet magni laborum labore beatae.</p>
             <div class="btn-sci">
-                <a href="#" class="btn">Download CV</a>
                 <div class="sci">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
+                <a href="#" class="btn">Download CV</a>
             </div>
+            
         </div>
         <div class="home-img">
             <div class="img-box">
@@ -45,5 +60,16 @@
             </div>
         </div>
     </section>
+
+    <!-- javaScript -->
+
+<script>
+const menuIcon = document.getElementById("menuIcon");
+const navLinks = document.getElementById("navLinks");
+
+menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+</script>
 </body>
 </html>
