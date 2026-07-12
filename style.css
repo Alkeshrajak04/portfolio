@@ -161,10 +161,7 @@ a{
     mix-blend-mode: lighten;
 }
 
-.sci {
-    display: flex;
-    align-items: center;
-}
+
 
 
 /* ========== Tablet ========== */
@@ -190,70 +187,6 @@ a{
     .home-img .img-box{
         width:40vw;
         height:40vw;
-    }
-
-}
-
-/* ========== Mobile ========== */
-@media (max-width:768px){
-
-    .navbar{
-        padding:18px 5%;
-        flex-wrap:wrap;
-    }
-
-    .navbar .logo{
-        font-size:28px;
-    }
-
-    .navbar ul{
-        width:100%;
-        justify-content:center;
-        flex-wrap:wrap;
-        margin-top:15px;
-    }
-
-    .navbar ul li{
-        margin:10px 15px;
-    }
-
-    .navbar ul li a{
-        font-size:16px;
-    }
-
-    .home{
-        flex-direction:column-reverse;
-        justify-content:center;
-        text-align:center;
-        height:auto;
-        min-height:100vh;
-        padding:150px 5% 50px;
-    }
-
-    .home-info h1{
-        font-size:36px;
-    }
-
-    .home-info h2{
-        font-size:24px;
-    }
-
-    .home-info p{
-        font-size:15px;
-    }
-
-    .home-info .btn-sci{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .home-info .btn-sci .sci{
-        margin-left:0;
-    }
-
-    .home-img .img-box{
-        width:70vw;
-        height:70vw;
     }
 
 }
@@ -302,7 +235,6 @@ a{
 
 }
 
-
 .menu-icon{
     display: none;
     font-size: 30px;
@@ -311,15 +243,20 @@ a{
 }
 
 
-
+/* ========== Mobile ========== */
 @media (max-width:768px){
 
     .menu-icon{
-        display:block;
+        display: block;
     }
 
     .navbar{
         padding:20px 5%;
+        flex-wrap: wrap;
+    }
+
+    .navbar .logo{
+        font-size:28px;
     }
 
     .navbar ul{
@@ -331,7 +268,9 @@ a{
         display:none;
         flex-direction:column;
         align-items:center;
+        justify-content:center;
         padding:20px 0;
+        margin-top:15px;
     }
 
     .navbar ul.show{
@@ -342,9 +281,49 @@ a{
         margin:15px 0;
     }
 
+    .navbar ul li a{
+        font-size:16px;
+    }
+
     .home{
         flex-direction:column-reverse;
+        justify-content:center;
         text-align:center;
+        height:auto;
+        min-height:100vh;
         padding:120px 5% 50px;
+    }
+
+    .home-info h1{
+        font-size:36px;
+    }
+
+    .home-info h2{
+        font-size:24px;
+    }
+
+    .home-info p{
+        font-size:15px;
+    }
+
+    .home-info .btn-sci{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .home-info .btn-sci .sci{
+        margin-left:0;
+    }
+
+    .home-img .img-box{
+        width:70vw;
+        height:70vw;
+    }
+}
+
+
+@media (min-width: 769px){
+    .menu-icon{
+        display: none !important;
     }
 }
