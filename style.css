@@ -13,7 +13,7 @@ css start
 	--dark-color: #1f232e;
 	--section-color: #262b3a;
 	--card-color: #2f3547;
-	--green-color: #7cf12e;
+	--green-color: #F2C6A7;
 	--white-color: #ffffff;
 }
 
@@ -282,7 +282,7 @@ menu icon
 	top: 0;
 	width: 4px;
 	height: 100%;
-	background: var(--green-color);
+	background: #F2C6A7;
 }
 
 .timeline-item {
@@ -296,7 +296,7 @@ menu icon
 	top: 15px;
 	width: 18px;
 	height: 18px;
-	background: var(--green-color);
+	background: #F2C6A7;
 	border-radius: 50%;
 	border: 4px solid #0f172a;
 }
@@ -315,7 +315,7 @@ menu icon
 
 .year {
 	display: inline-block;
-	border: 2px solid #04aa6d;
+	border: 2px solid #F2C6A7;
 	padding: 6px 14px;
 	border-radius: 20px;
 	font-size: 14px;
