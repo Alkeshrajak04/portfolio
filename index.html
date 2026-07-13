@@ -1,73 +1,328 @@
 <!DOCTYPE html>
-<!-- Alkesh Rajak -->
 <html lang="en">
+
 <head>
+    <!-- Character Encoding -->
     <meta charset="UTF-8">
+
+    <!-- IE Compatibility -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsive Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <!-- CSS Link -->
+
+    <!-- Website Title -->
+    <title>Portfolio</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
-   
-    <!-- Font Awesome CDN -->
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@latest/font/simple-icons.min.css">
-
-          
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-   <!-- Navbar -->
-    
+
+    <!-- ================= NAVBAR START ================= -->
     <nav class="navbar">
-    <a href="#" class="logo">Port<span>folio.</span></a>
 
-    <i class="fa-solid fa-bars menu-icon" id="menuIcon"></i>
+        <!-- Logo -->
+        <a href="#" class="logo">
+            Port<span>folio.</span>
+        </a>
 
-    <ul id="navLinks">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Experience</a></li>
-         <li><a href="#">Projects</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact</a></li>
-        
+        <!-- Mobile Menu Icon -->
+        <i class="fa-solid fa-bars menu-icon" id="menuIcon"></i>
 
-    </ul>
-</nav>
+        <!-- Navigation Links -->
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<!-- Main Content -->
-<section class="home">
+    </nav>
+    <!-- ================= NAVBAR END ================= -->
+
+
+    <!-- ================= HOME SECTION START ================= -->
+    <section class="home" id="home">
+
+        <!-- Home Content -->
         <div class="home-info">
-            <h1>Alkesh Rajak</h1>
-            <h2>I'm a Full Stack Developer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquam voluptates, tempora, ratione libero saepe voluptatibus et, necessitatibus nisi temporibus optio. Velit, enim tempora. Est voluptate eveniet magni laborum labore beatae.</p>
-            <div class="btn-sci">
-                <div class="sci">
-                    <a href="#"><i class="si si-codechef"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-leetcode"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="si si-hackerrank"></i></a>
 
+            <h1>Alkesh Rajak</h1>
+
+            <h2>I'm a Full Stack Developer</h2>
+
+            <p>
+                I am a passionate full-stack developer with experience in building modern web applications, I like to solve problems and create efficient, scalable solutions.
+            </p>
+
+            <!-- Buttons & Social Icons -->
+            <div class="btn-sci">
+
+                <!-- Social Media -->
+                <div class="sci">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
+
+                <!-- Download CV Button -->
                 <a href="#" class="btn">Download CV</a>
+
             </div>
-            
+
         </div>
+
+        <!-- Profile Image -->
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="./alke_Image-removebg-preview.png" alt="">
+                    <img src="image/alke_Image-removebg-preview.png" alt="Profile Image">
                 </div>
             </div>
         </div>
+
     </section>
+    <!-- ================= HOME SECTION END ================= -->
 
-    <!-- javaScript -->
 
+    <!-- ================= MAIN CONTAINER START ================= -->
+    <div class="container">
+
+
+        <!-- ================= EDUCATION SECTION ================= -->
+        <div class="box" id="education">
+
+            <h2 class="heading">Education</h2>
+
+            <div class="timeline">
+
+                <!-- Education 1 -->
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <span class="year">2021 - 2025</span>
+
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+
+                        <p><strong>Institute :</strong> Institute of Engineering, Jiwaji University, Gwalior</p>
+                        <p><strong>Branch :</strong> Computer Science & Engineering</p>
+                        <p><strong>CGPA :</strong> 8.0 / 10</p>
+                    </div>
+
+                </div>
+
+                <!-- Education 2 -->
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <span class="year">2020 - 2021</span>
+
+                        <h3>Higher Secondary Education</h3>
+
+                        <p><strong>School :</strong>Madhya Pradesh Board of Secondary Education, Satna</p>
+                        <p><strong>Stream :</strong> Science (PCMB)</p>
+                        <p><strong>Percentage :</strong> 72%</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= EXPERIENCE SECTION ================= -->
+        <div class="box" id="experience">
+
+            <h2 class="heading">Experience</h2>
+
+            <div class="timeline">
+
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <span class="year">June 2024 - july 2024</span>
+
+                        <h3>Machine Learning Intern</h3>
+
+                        <p><strong>Position :</strong> Machine Learning Intern</p>
+                        <p><strong>Company :</strong> Maulana Azad National Institute of Technology, Bhopal</p>
+                    </div>
+
+                </div>
+
+                <!-- Experience 2 -->
+                <!-- <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+                        <span class="year">Jun 2024 - Dec 2024</span>
+
+                        <h3>Web Development Intern</h3>
+
+                        <p><strong>Position :</strong> Front-End Developer Intern</p>
+                        <p><strong>Company :</strong> XYZ Software Solutions</p>
+                        <p><strong>Duration :</strong> Jun 2024 - Dec 2024</p>
+                    </div>
+
+                </div> -->
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <div class="box" id="projects">
+
+            <h2 class="heading">Projects</h2>
+
+            <div class="project-container">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <img src="images/project1.jpg" alt="Project Image">
+
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+
+                        <p>
+                            A responsive personal portfolio website developed
+                            using HTML, CSS and JavaScript. It showcases my
+                            skills, education, experience and projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <img src="images/project2.jpg" alt="Project Image">
+
+                    <div class="project-content">
+
+                        <h3>College Management System</h3>
+
+                        <p>
+                            A web-based college management system for managing
+                            students, faculty, courses and attendance with
+                            an admin dashboard.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <div class="box" id="skills">
+
+            <h2 class="heading">Skills</h2>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Bootstrap, Tailwind CSS</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <p>Java, Spring Framework, Spring Boot, Docker, REST API </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <p>DBMS, MySQL, SQL, JDBC</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, GitHub, VS Code, IntelliJ IDEA</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ================= MAIN CONTAINER END ================= -->
+
+
+    <!-- ================= FOOTER START ================= -->
+    <footer class="footer" id="contact">
+
+        <h2>Let's Connect</h2>
+
+        <div class="footer-content">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +91 8959432694</p>
+                <p><i class="fas fa-envelope"></i> alkeshrajak484@gmail.com</p>
+                <p><i class="fas fa-location-dot"></i> Banglour, Karnataka, India</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-icons">
+
+                <a href="https://github.com/yourusername" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://x.com/yourusername" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/yourusername" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://instagram.com/yourusername" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <p class="copyright">
+            © 2025 Alkesh Rajak. All Rights Reserved.
+        </p>
+
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
