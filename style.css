@@ -142,8 +142,8 @@ navbar
 
     /* White Horizontal + Vertical Lines */
     background-image:
-        linear-gradient(rgba(15, 14, 14, 0.12) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(18, 10, 10, 0.12) 1px, transparent 1px);
+        linear-gradient(hsla(0, 3%, 6%, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, hsla(0, 3%, 6%, 0.03) 1px, transparent 1px);
 
     background-size: 50px 50px;
 
