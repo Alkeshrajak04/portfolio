@@ -24,6 +24,7 @@
 
 <body>
 
+
     <!-- ================= NAVBAR START ================= -->
     <nav class="navbar">
 
@@ -44,6 +45,7 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><button class="button-50" role="button">Button 50</button></li>
         </ul>
 
     </nav>
@@ -51,14 +53,15 @@
 
 
     <!-- ================= HOME SECTION START ================= -->
-    <section class="home" id="home">
-
+    
+    <section class="home profile-section" id="home">
+    
         <!-- Home Content -->
         <div class="home-info">
 
             <h1>Alkesh Rajak</h1>
 
-            <h2>I'm a Full Stack Developer</h2>
+            <h2>I'm a <span>Full Stack Developer</span></h2>
 
             <p>
                 I am a passionate full-stack developer with experience in building modern web applications, I like to solve problems and create efficient, scalable solutions.
@@ -75,10 +78,13 @@
                     <a href="#"><i class="fa-brands fa-github"></i></a>
                 </div>
 
-                <!-- Download CV Button -->
-                <a href="#" class="btn">Download CV</a>
+             </div>
 
-            </div>
+             <!-- Download CV Button -->
+            <div class="btn-container">
+            <a href="#" class="btn">Download CV</a>
+            <a href="#" class="btn btn-second">GitHub</a>
+        </div>
 
         </div>
 
@@ -86,7 +92,7 @@
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="./alke_Image-removebg-preview.png" alt="Profile Image">
+                    <img src="image/alke_Image-removebg-preview.png" alt="Profile Image">
                 </div>
             </div>
         </div>
@@ -94,6 +100,20 @@
     </section>
     <!-- ================= HOME SECTION END ================= -->
 
+
+
+        <!-- ================= Carousel ================= -->
+<div class="carousel-container">
+    <h2 class="heading"></h2>
+<div class="carousel">
+    <div class="slides">
+        <img src="https://picsum.photos/id/1015/800/400" alt="Image 1">
+        <img src="https://picsum.photos/id/1016/800/400" alt="Image 2">
+        <img src="https://picsum.photos/id/1018/800/400" alt="Image 3">
+        <img src="https://picsum.photos/id/1020/800/400" alt="Image 4">
+    </div>
+</div>
+</div>
 
     <!-- ================= MAIN CONTAINER START ================= -->
     <div class="container">
@@ -200,7 +220,7 @@
                 <!-- Project 1 -->
                 <div class="project-card">
 
-                    <img src="images/project1.jpg" alt="Project Image">
+                    <img src="portfolio.png" alt="Project Image">
 
                     <div class="project-content">
                         <h3>Portfolio Website</h3>
@@ -218,7 +238,7 @@
                 <!-- Project 2 -->
                 <div class="project-card">
 
-                    <img src="images/project2.jpg" alt="Project Image">
+                    <img src="portfolio.png" alt="Project Image">
 
                     <div class="project-content">
 
@@ -274,6 +294,8 @@
     <!-- ================= MAIN CONTAINER END ================= -->
 
 
+
+
     <!-- ================= FOOTER START ================= -->
     <footer class="footer" id="contact">
 
@@ -317,6 +339,8 @@
         </p>
 
     </footer>
+
+
     <!-- ================= FOOTER END ================= -->
 
 
